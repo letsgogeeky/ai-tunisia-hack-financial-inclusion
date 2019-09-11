@@ -13,4 +13,15 @@ In the `main.py` file there is a playground for how I got there using plots and 
 
 In `svc.py` there is the neat solution using Support Vector Machine.
 
+
+## How  to get it working:
+
+`
+conda create --name env
+`
+
+`
+pip install -r requirements.txt
+`
+
 Enjoy.

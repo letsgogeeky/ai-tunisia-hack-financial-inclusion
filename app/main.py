@@ -70,7 +70,6 @@ cols = ['job_type', 'cellphone_access',
 dataset = data[cols]
 target = data['bank_account']
 
-print(cols)
 
 def apply_model(model, data_train, data_test, target_train, target_test):
     model = model()
