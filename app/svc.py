@@ -14,7 +14,7 @@ features = ['job_type', 'cellphone_access',
 
 def prepare_data(file_path):
     data = pd.read_csv(file_path)
-g
+
     le = LabelEncoder()
     if 'bank_account' in data:
         data['bank_account'] = le.fit_transform(data['bank_account'])
