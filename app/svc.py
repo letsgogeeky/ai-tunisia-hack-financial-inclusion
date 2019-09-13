@@ -9,7 +9,7 @@ from sklearn.model_selection import train_test_split
 
 features = ['job_type', 'cellphone_access',
             'relationship_with_head', 'education_level',
-            'household_size', 'location_type']
+            'household_size', 'location_type', 'country']
 
 
 def prepare_data(file_path):
@@ -44,10 +44,9 @@ def split_data_and_target(data):
 
 
 def apply_svc(data, target):
-    data_train, data_test, target_train, target_test = train_test_split(data, target, test_size=0.30,
-                                                                        random_state=10)
+    data_train, data_test, target_train, target_test = train_test_split(data, target, test_size=0.30)
 
-    svc = SVC(gamma='auto')
+    svc = SVC(gamma='auto', kernel='rbf', C=5)
 
     svc.fit(data_train, target_train)
     pred = svc.predict(data_test)

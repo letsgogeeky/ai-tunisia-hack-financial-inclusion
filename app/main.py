@@ -144,8 +144,6 @@ print(submission_hint)
 print("Support vector machine", accuracy_score(target_test, pred))
 
 
-
-
 # bank_account = encode_column_label(data, 'bank_account')
 #
 # job_type = encode_column(data, 'job_type') # important
